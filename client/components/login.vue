@@ -4,8 +4,8 @@
       .login-sd
         .d-flex.mb-5
           .login-logo
-            v-avatar(tile, size='34')
-              v-img(:src='logoUrl')
+            v-avatar(tile)
+              v-img(:src='logoUrl', contain)
           .login-title
             .text-h6.grey--text.text--darken-4 {{ siteTitle }}
         v-alert.mb-0(
@@ -726,14 +726,24 @@ export default {
     }
 
     &-logo {
-      padding: 12px 0 0 12px;
-      width: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 12px;
+      width: 160px;
       height: 58px;
       background-color: #222;
       margin-left: 12px;
       border-bottom-left-radius: 7px;
       border-bottom-right-radius: 7px;
+
+    /* Força o avatar a respeitar as dimensões da caixa preta */
+    .v-avatar {
+      width: 100% !important;
+      height: 100% !important;
+      min-width: unset !important;
     }
+  }
 
     &-title {
       height: 58px;
