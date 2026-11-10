@@ -1,6 +1,6 @@
 <template lang="pug">
   v-app
-    .login(style='background-image: url("/_assets/img/cpa.jpg") !important;')
+    .login(style='background-image: url("/_assets/img/cpa_capa_login.jpg") !important;')
       .login-sd
         .d-flex.mb-5
           .login-logo
