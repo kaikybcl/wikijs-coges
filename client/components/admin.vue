@@ -320,4 +320,8 @@ export default {
   }
 }
 
+.v-application.admin .black{
+  background-color: #005ba8!important;
+}
+
 </style>
