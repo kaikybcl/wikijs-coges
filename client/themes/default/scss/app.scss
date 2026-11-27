@@ -1036,9 +1036,11 @@
   }
 
   figure.image {
-    margin: 1rem 0 0 0;
+    display: table;
+    margin: 0 auto 1rem auto;
 
     img {
+      display: block;
       margin: 0 auto;
     }
     figcaption {
@@ -1057,10 +1059,12 @@
 
   figure.image-style-align-right {
     float: right;
+    margin: 0 0 1rem 1rem;
   }
 
   figure.image-style-align-left {
     float: left;
+    margin: 0 1rem 1rem 0;
   }
 
   // ---------------------------------
