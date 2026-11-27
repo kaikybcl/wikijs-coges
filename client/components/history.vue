@@ -574,4 +574,8 @@ export default {
   }
 }
 
+.v-application .black {
+  background-color: #005ba8!important;
+}
+
 </style>
